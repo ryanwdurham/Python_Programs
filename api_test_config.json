@@ -1,0 +1,22 @@
+[
+    {
+        "url": "https://jsonplaceholder.typicode.com/posts/1",
+        "method": "GET",
+        "expected_keys": ["userId", "id", "title", "body"],
+        "expected_values": {"id": 1, "userId": 1}
+    },
+    {
+        "url": "https://jsonplaceholder.typicode.com/users/",
+        "method": "GET",
+        "expected_keys": ["id", "name", "username", "email"],
+        "expected_values": {"id": 1, "username": "Bret"}
+    },
+    {
+        "url": "https://jsonplaceholder.typicode.com/posts",
+        "method": "POST",
+        "payload": {"title": "foo", "body": "bar", "userId": 1},
+        "expected_keys": ["id", "title", "body", "userId"],
+        "expected_values": {"title": "foo", "body": "bar", "userId": 1}
+    }
+]
+
